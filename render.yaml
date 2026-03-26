@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: html-to-pdf-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: RAPIDAPI_PROXY_SECRET
+        sync: false   # You will paste this value manually in Render's dashboard
