@@ -16,6 +16,7 @@ conn.request("POST", "/generate-pdf", payload, headers)
 res = conn.getresponse()
 data = res.read()
 
+#Choose where your file will be archived.
 with open(r"C:\Users\Exemple\Downloads\super_mario_wiki.pdf", "wb") as f: #Change the path to your desired location
     f.write(data)
 
